@@ -20,6 +20,7 @@ html {
     --nine-text-color:#C4C4C4;
     --ten-text-color: #AFB1B8;
     --eleven-text-color: #E5E5E5;
+    --twelw-text-color:rgba(255, 255, 255, 0.1);
 }
 
 .page {
@@ -426,20 +427,65 @@ html {
 }
 
        /*clients*/
+.clients {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 94px;
+    padding-bottom: 50px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+
 .our-clients .item {
-    width: 170px;
-    background-color: var(--eleven-text-color);
+    background-color: var(--three-text-color);
 }
 
 .our-clients {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 94px;
 }
 
-.icon-clients {
-    width: 45px;
-    height: 50px;
-    fill: var(--fourth-text-color);
+.our-clients .item {
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    padding-top: 22px;
 }
+
+.client-one {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.our-clients .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-client {
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-client:hover, .client-one:hover,
+.icon-client:focus, .client-one:focus {
+    fill: var(--three-text-color);
+    background-color: var(--fourth-text-color);
+}
+
 
        /*foorer*/
 
@@ -460,7 +506,7 @@ html {
 .adress-footer {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 20px;
+
 }
 
 .adress {
@@ -486,7 +532,71 @@ html {
     line-height: 1.7;
 }
 
+.footer-social-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 74px;
+    padding-left: 100px;
 
+    color: var(--three-text-color);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-social {
+    display: flex;
+    padding-left: 100px;
+}
+
+.footer-social-tools {
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+}
+
+
+.footer-social-item {
+    width: 20px;
+    height: 20px;
+    fill: var(--three-text-color);
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-item:hover,  .footer-social-lists:hover,  
+.footer-social-item:focus,  .footer-social-lists:focus {
+    background-color: var(--fourth-text-color);
+}
+
+.footer-social-lists:hover  
+.footer-social-lists:focus {
+    background-color: var(--fourth-text-color);
+}
+
+.footer-social-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--twelw-text-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.footer-div {
+display: flex;
+}
 
 /* Portfolio*/
 
